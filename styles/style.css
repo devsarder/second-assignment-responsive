@@ -207,6 +207,31 @@ h3 {
   font-weight: 500;
   line-height: 30px; /* 150% */
 }
+/* section anniversary starts here */
+
+.anniversary {
+  max-width: 1200px;
+  min-height: 500px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 100px;
+  margin: 120px auto 120px auto;
+  padding-left: 100px;
+}
+.anniversary-content-container {
+  text-align: right;
+  margin-right: 120px;
+}
+.image-large-anniversary {
+  width: 100%;
+}
+.image-tiny {
+  width: 250px;
+  position: relative;
+  bottom: 100px;
+  right: 100px;
+}
 /* mobile first responsive styles */
 @media screen and (max-width: 576px) {
   .banner {
@@ -252,4 +277,18 @@ h3 {
     display: flex;
     flex-direction: column;
   }
+  .anniversary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 120px;
+  }
+  .anniversary-content-container {
+    text-align: center;
+  }
+  .image-tiny {
+  width: 250px;
+  position: relative;
+  bottom: 100px;
+}
 }
