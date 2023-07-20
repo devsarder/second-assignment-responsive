@@ -232,6 +232,69 @@ h3 {
   bottom: 100px;
   right: 100px;
 }
+/* section online-games */
+.online-games {
+  max-width: 1200px;
+  min-height: 500px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 100px;
+  margin: 120px auto 120px auto;
+  padding-left: 100px;
+}
+.online-image-large {
+  width: 100%;
+}
+.image-tiny-online {
+  width: 250px;
+  position: relative;
+  bottom: 100px;
+  right: 100px;
+}
+/* section career styles */
+.careers {
+  background-color: var(--primary-color);
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.careers h4 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+}
+.ul-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px; /* 200% */
+}
+.ul-container ul > li {
+  list-style: none;
+}
+.careers button {
+  padding: 21px 40px;
+  gap: 10px;
+  color: var(--primary-color);
+  border-radius: 48px;
+  background: #fff;
+  border: none;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 600;
+}
+.career-image {
+  width: 100%;
+}
 /* mobile first responsive styles */
 @media screen and (max-width: 576px) {
   .banner {
@@ -277,18 +340,35 @@ h3 {
     display: flex;
     flex-direction: column;
   }
-  .anniversary {
+  .anniversary,
+  .online-games {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 120px;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 107px;
   }
   .anniversary-content-container {
     text-align: center;
   }
-  .image-tiny {
-  width: 250px;
-  position: relative;
-  bottom: 100px;
-}
+  .image-tiny,
+  .image-tiny-online {
+    width: 250px;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+  }
+  .careers {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px;
+
+  }
+  .careers .ul-left {
+    text-align: left;
+  }
+   .careers .ul-right{
+    text-align: right;
+   }
 }
