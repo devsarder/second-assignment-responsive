@@ -253,15 +253,19 @@ h3 {
   right: 100px;
 }
 /* section career styles */
-.careers {
+.bg-pink-careers {
   background-color: var(--primary-color);
+}
+.careers {
   display: flex;
   max-width: 1200px;
   margin: auto;
   justify-content: space-between;
   align-items: center;
   color: white;
+  padding: 120px 0;
 }
+
 .careers h4 {
   color: #fff;
   font-size: 48px;
@@ -294,6 +298,92 @@ h3 {
 }
 .career-image {
   width: 100%;
+}
+/* section footer top styles */
+.items-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 130px 0;
+}
+.items-first-row {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.arcade-game {
+  border: 2px solid steelblue;
+  border-radius: 50px;
+}
+
+.items-second-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+/* footer styles */
+footer {
+  background: #0b0223;
+  min-height: 500px;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.logo-container {
+  justify-content: center;
+}
+.footer-links ul {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 64px;
+  margin-top: 64px;
+}
+.footer-links ul li {
+  list-style: none;
+}
+.footer-links ul > li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.social-image-container ul {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 64px;
+  list-style: none;
+}
+
+.social-image-container ul li img {
+  width: 40px;
+  height: 40px;
+}
+
+.terms-conditions ul li {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.terms-conditions ul li a {
+  color: gray;
+  text-decoration: none;
+}
+.copy-right {
+  color: gray;
+  margin-top: 60px;
 }
 /* mobile first responsive styles */
 @media screen and (max-width: 576px) {
@@ -363,12 +453,37 @@ h3 {
     display: flex;
     flex-direction: column;
     padding: 100px 100px;
-
   }
   .careers .ul-left {
     text-align: left;
   }
-   .careers .ul-right{
+  .careers .ul-right {
     text-align: right;
-   }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container {
+    max-width: 400px;
+  }
+  .footer-links ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .social-image-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .terms-conditions ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+  .copy-right{
+    width: 200px;
+    height: auto;
+  }
 }
